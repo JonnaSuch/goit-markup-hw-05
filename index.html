@@ -68,7 +68,7 @@
             <h1 class="main-descripton">
               EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
             </h1>
-            <button class="button-first">
+            <button class="button-first" data-modal-open>
               <span class="button-text">Zamów usługę</span>
             </button>
           </div>
@@ -447,5 +447,11 @@
         </section>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
