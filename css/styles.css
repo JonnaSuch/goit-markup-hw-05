@@ -141,6 +141,7 @@ button:hover {
   font-size: 14px;
   line-height: 1.14;
 }
+
 .first-link:hover {
   color: var(--brand-color);
 }
@@ -160,8 +161,7 @@ button:hover {
   position: absolute;
   width: 53px;
   height: 4px;
-  top: 76px;
-  left: 453px;
+  top: 32px;
   border-radius: 2px;
   background: var(--brand-color);
 }
@@ -185,9 +185,10 @@ button:hover {
 .contact-link-icon:focus {
   fill: var(--brand-color);
 }
-.contact-list:hover svg {
+.second-link:hover .contact-link-icon {
   fill: var(--brand-color);
 }
+
 .contact-link-icon-item {
   display: flex;
   justify-content: center;
@@ -353,7 +354,6 @@ button:hover {
 .person {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
 }
 .person-name {
   font-weight: 700;
@@ -414,7 +414,6 @@ button:hover {
 }
 .client-list {
   display: flex;
-  margin-bottom: 94px;
 }
 .client-list-item {
   display: flex;
