@@ -38,15 +38,17 @@ hr {
 a:hover,
 a:focus {
   color: var(--brand-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
   width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
   align-items: center;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 .section {
   padding-top: 94px;
@@ -143,7 +145,7 @@ button:hover {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  transition-duration: 250ms;
+  transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -154,7 +156,7 @@ button:hover {
   color: var(--color-third);
   line-height: 1.14em;
   margin-right: 30px;
-  transition-duration: 250ms;
+  transition: color 250ms, fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link {
@@ -179,19 +181,15 @@ button:hover {
   fill: var(--color-third);
   display: inline-flex;
   align-self: center;
-  transition-duration: 250ms;
+  transition: color 250ms, fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link-icon:hover,
 .contact-link-icon:focus {
   fill: var(--brand-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .second-link:hover .contact-link-icon {
   fill: var(--brand-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link-icon-item {
@@ -277,8 +275,6 @@ button:hover {
   line-height: 30px;
   letter-spacing: 0.06em;
   color: var(--color-white);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-lorem {
   display: flex;
@@ -378,11 +374,14 @@ button:hover {
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
 }
+.person-list-image {
+  display: block;
+}
 .job {
   letter-spacing: 0.03em;
   line-height: 1.187em;
   color: var(--color-third);
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 .social-media {
   display: flex;
@@ -391,7 +390,6 @@ button:hover {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 16px;
   padding-bottom: 18px;
 }
 .social-media-button {
@@ -401,6 +399,8 @@ button:hover {
   height: 44px;
   border-radius: 50%;
   fill: var(--icon-bg);
+  transition: background 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-button:not(:last-child) {
   margin-right: 10px;
@@ -410,8 +410,6 @@ button:hover {
 .social-media-button:active {
   background-color: var(--brand-color);
   fill: var(--color-white);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client {
   font-size: 36px;
@@ -434,7 +432,7 @@ button:hover {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--icon-bg);
-  transition-duration: 250ms;
+  transition: fill 250ms, border 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-list-item:hover,
@@ -442,8 +440,6 @@ button:hover {
   fill: var(--brand-color);
   border-color: var(--brand-color);
   cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer {
   background-color: #2f303a;
@@ -483,7 +479,7 @@ button:hover {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
   line-height: 24px;
-  transition-duration: 250ms;
+  transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-footer {
@@ -513,15 +509,13 @@ button:hover {
   fill: var(--color-white);
   border-radius: 50%;
   background: var(--svg-background);
-  transition-duration: 250ms;
+  transition: background 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-footer-item:hover,
 .social-media-footer-item:focus {
   background: var(--brand-color);
   cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-second:hover {
@@ -529,8 +523,6 @@ button:hover {
   color: var(--color-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgb(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-second {
@@ -544,13 +536,17 @@ button:hover {
   border-style: none;
   padding: 6px 22px;
   background-color: #f5f4fa;
-  transition-duration: 250ms;
+  transition: color 250ms, background 250ms, box-shadow 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list {
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  gap: 8px;
 }
 .button-list-item {
   margin-left: 8px;
@@ -572,8 +568,6 @@ button:hover {
 .projects-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-border {
   border: 1px solid #eeeeee;
@@ -588,8 +582,6 @@ button:hover {
 .projects-overlay:hover .overlay {
   transform: translateX(0);
   background: rgba(33, 150, 243, 0.9);
-  transition-delay: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2.1);
 }
 .overlay {
   position: absolute;
@@ -600,7 +592,8 @@ button:hover {
   padding-top: 49px;
   padding-left: 24px;
   transform: translateY(100%);
-  transition: 250ms;
+  transition: transforms 250ms, background 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay > p {
   font-size: 18px;
