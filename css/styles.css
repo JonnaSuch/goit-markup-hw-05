@@ -44,6 +44,7 @@ a:focus {
   margin-right: auto;
   margin-left: auto;
   align-items: center;
+  padding: 0 15px;
 }
 .center {
   margin-left: auto;
@@ -399,7 +400,7 @@ button:hover {
   height: 44px;
   border-radius: 50%;
   fill: var(--icon-bg);
-  transition: background 250ms, fill 250ms;
+  transition: background-color 250ms, fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-button:not(:last-child) {
@@ -509,7 +510,7 @@ button:hover {
   fill: var(--color-white);
   border-radius: 50%;
   background: var(--svg-background);
-  transition: background 250ms;
+  transition: background-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-footer-item:hover,
@@ -536,7 +537,7 @@ button:hover {
   border-style: none;
   padding: 6px 22px;
   background-color: #f5f4fa;
-  transition: color 250ms, background 250ms, box-shadow 250ms;
+  transition: color 250ms, background-color 250ms, box-shadow 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -592,7 +593,7 @@ button:hover {
   padding-top: 49px;
   padding-left: 24px;
   transform: translateY(100%);
-  transition: transforms 250ms, background 250ms;
+  transition: transforms 250ms, background-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay > p {
