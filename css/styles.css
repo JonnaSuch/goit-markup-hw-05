@@ -181,11 +181,11 @@ button:hover {
   position: absolute;
   width: 53px;
   height: 4px;
-  bottom: -31px;
+  bottom: -32px;
   border-radius: 2px;
   background: transparent;
   left: 0;
-  transition: background-color 250ms cubic-bezier (0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link-icon {
